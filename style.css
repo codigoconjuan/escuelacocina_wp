@@ -1,0 +1,293 @@
+/*
+    Theme Name: Escuela Cocina
+    Theme URI: 
+    Author: Juan Pablo De la torre 
+    Author URI: 
+    Description: Tema para escuela de Cocina
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: escuelacocina
+*/
+
+
+:root {
+    --primario: #f46669;
+    --secundario: #c7c57d;
+    --gris: #f5f5f5;
+}
+
+body {
+    font-family: sans-serif;
+    color: #303030;
+}
+p {
+    font-weight: 300;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.wpcf7-form-control-wrap,
+.form-group label{
+    width: 100%;
+}
+.card-img-top {
+    height: auto;
+}
+.entrada .btn-primary {
+    color: white!important;
+}
+.bg-primary,
+.list-group-item-primary,
+.btn-primary  {
+    background-color: #f46669!important;
+}
+.btn-primary {
+    border-color: #f46669;
+}
+.badge-secondary,
+.bg-secondary,
+.list-group-item-secondary {
+    background-color: #c7c57d!important;
+}
+
+.badge-secondary {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: #f46669;
+}
+
+.current_page_item .nav-link  {
+    color: #f46669;
+    border-bottom: 2px solid #f46669;
+}
+.bg-light {
+    background-color: white!important;
+}
+.separador::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.separador.inverso::after {
+    background-image: url(img/separador-inverso.png)!important;
+}
+/** Home **/
+.imagen > div {
+    height: 30rem;
+}
+@media (min-width:768px) {
+    .imagen > div {
+        height: 45rem;
+    }
+}
+.imagen-fondo {
+    background-size: cover;
+    background-position: top center;
+}
+
+.imagen-superior .contenido {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.imagen-inferior .contenido {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+@media (min-width:768px) {
+    .imagen-inferior .bg-secondary {
+        order: 2;
+    }
+}
+
+body.home .clases {
+    background-color: #f5f5f5;
+}
+
+/** Imagenes de Fondo **/
+
+.imagen-destacada {
+    height: 24rem;
+    background-size: cover;
+}
+/** Nosotros **/
+.contenedor-principal { 
+    border: 1px solid #e1e1e1;
+    position: relative;
+    z-index: 100;
+}
+.destacada {
+    margin-top: -5rem;
+}
+.no-destacada {
+    margin-top: 0!important;
+    border: none;
+}
+.nosotros .informacion h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+/** Blog **/
+blockquote.subtitulo {
+    font-size: 1.6rem;
+    color: #303030;
+    font-style: italic;
+    font-weight: 100;
+    border-left: .2rem solid #f46669;
+}
+.entrada a {
+    color: #f46669;
+}
+.contenido-entrada .meta p {
+    font-weight: 700;
+}
+.contenido-entrada .meta span {
+    color: #f46669;
+}
+
+.btn-primary:hover {
+    background-color: #e65659;
+    border-color: #e65659;
+}
+.text-light {
+    color: white!important;
+}
+.page-link,
+.page-item a {
+    color: #f46669!important;
+    text-decoration: none!important;
+}
+.page-link:hover {
+    background-color: #f46669;
+    color: #ffffff!important;
+}
+/** Comentarios **/
+.comment-respond a {
+    color: #f46669;
+}
+.comment-body {
+    background-color: #c7c57d;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.comment-body a {
+    color: black;
+}
+.comment-body a:hover {
+    color: #dc4747;
+}
+.comment-reply-title {
+    text-align: center;
+}
+.comment-form-comment label {
+    width: 100%;
+    font-weight: bold;
+}
+.comment-form-comment textarea {
+    width: 100%;
+}
+.comment-respond .submit {
+    background-color: #f46669;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: .5rem;
+    transition: background-color .3s ease-in;
+    width:100%;
+}
+.comment-respond .submit:hover {
+    background-color: #dc4747;
+    cursor: pointer;
+}
+#respond form > p {
+    display: flex;
+    flex-wrap: wrap;
+}
+#respond form > p label{
+    flex: 0 0 200px;
+    font-weight: bold;
+}
+#respond form > p input {
+    flex:1;
+}
+.comentarios-cerrados.alert-danger {
+    background-color: #f46669;
+    color: white;
+}
+/** Sidebar **/
+aside a, 
+aside a:hover {
+    color: #f5f5f5;
+}
+aside .card {
+    border: none;
+}
+aside .card-title {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+aside .card-subtitle {
+    color: #f46669;
+    font-weight: 400;
+}
+aside .card-footer {
+    background-color: #c7c57d;
+}
+aside .card-footer a {
+    color: black;
+}
+/** Cursos **/
+
+.card {
+    margin-bottom: 2rem;
+}
+.card-title {
+    font-weight: 400;
+}
+.card-subtitle {
+    color: #f46669;
+    font-weight: 400;
+}
+/* Clases **/
+.instructor {
+    font-size: 1.8rem;
+    color: #f46669;
+}
+
+/** Footer **/
+.licenciatura {
+    background-size: cover;
+    background-position: center center;
+}
+
+.licenciatura .row {
+    height: 38rem;
+}
+.licenciatura .contenido h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.display-4 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+
+.copyright{
+    font-weight: 700;
+}
+.footer {
+    border-bottom: 10px solid #f46669;
+}
